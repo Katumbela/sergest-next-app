@@ -1,3 +1,4 @@
+"use client"
 import { FaEnvelope, FaSpinner } from "react-icons/fa6";
 import { ColoredText } from "../colored-text/colored-text";
 import { Button } from "../button/button";

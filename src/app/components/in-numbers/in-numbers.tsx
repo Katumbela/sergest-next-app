@@ -1,3 +1,4 @@
+'use-client'
 import { motion } from "framer-motion";
 import { logos } from "../../../utils";
 import { BsEnvelope } from "react-icons/bs";

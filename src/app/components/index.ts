@@ -1,3 +1,5 @@
+'use-client'
+
 export * from "./button/button";
 export * from "./colored-text/colored-text";
 export * from "./hero/hero";

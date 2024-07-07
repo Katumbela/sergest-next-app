@@ -1,3 +1,4 @@
+'use-client'
 import { FaPlay } from "react-icons/fa6";
 import { bgs } from "../../../utils";
 import { ButtonSecondary } from "../button-secondary/button-secondary";

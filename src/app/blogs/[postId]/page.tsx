@@ -1,3 +1,6 @@
+
+"use client"
+
 import { useEffect, useState } from 'react';
 import { FaArrowRight, FaEye, FaSpinner } from 'react-icons/fa6';
 import { useParams } from 'react-router-dom';

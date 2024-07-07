@@ -22,11 +22,7 @@ export function Home() {
 
   return (
     <>
-       
-        <title>Pagina Inicial | Sergest - Software de Faturação</title>
-       
-        <meta property="og:description" content={"Descubra uma solução de faturação online eficiente para o seu negócio. Simplifique sua contabilidade com nosso software de gerenciamento de faturas. Experimente agora!"} />
-     
+      
       <Layout>
         <div className="container">
           <NavBar />

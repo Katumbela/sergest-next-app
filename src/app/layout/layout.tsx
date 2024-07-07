@@ -1,9 +1,7 @@
-'use-client'
+// src/app/layout/_layout.tsx
 import { ReactNode } from "react";
 import { motion } from "framer-motion";
 import NumberUtils from "../../utils/number-utils/number-utils";
-
-//import { NumberUtils } from "";
 
 type LayoutProps = {
   children: ReactNode;
@@ -12,11 +10,8 @@ type LayoutProps = {
 
 export function Layout({ children }: LayoutProps) {
   return (
-    <main className={``}>
-     
-       <div className="     ">
-        {children}
-      </div>
+    <main className="">
+      <div className="">{children}</div>
     </main>
   );
 }
@@ -35,7 +30,7 @@ export function LayoutBody({ children }: Omit<LayoutProps, "animateBg">) {
       initial={initial[index]}
       animate={animate[index]}
       transition={{ duration: 0.8, type: "spring", damping: 13 }}
-      className="     -z-10 "
+      className="-z-10"
     >
       {children}
     </motion.div>

@@ -1,0 +1,442 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+
+.comma {
+  font-family: "Dancing Script", cursive !important;
+}
+
+.hover-anim {
+  display: inline-block;
+  position: relative;
+}
+.hover-anim:hover {
+  color: #033e85 !important;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+
+.hover-anim:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2.5px;
+  bottom: -1px;
+  left: 0;
+  background-color: #00cddf;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-anim:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.swal2-confirm {
+  background: #033e85 !important ;
+}
+
+.btns {
+  gap: 0 !important;
+  justify-content: center !important;
+  width: 100% !important;
+}
+.btns .b1 {
+  color: white !important;
+}
+.btns button {
+  padding: 0.5rem 1rem !important;
+  align-self: center !important;
+  margin: 0.5rem 0 !important;
+}
+
+.animate-gradient {
+  background-size: 300%;
+  -webkit-animation: animatedgradient 4s ease infinite alternate;
+  -moz-animation: animatedgradient 4s ease infinite alternate;
+  animation: animatedgradient 4s ease infinite alternate;
+}
+
+html,
+body {
+  overflow-x: hidden !important;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+}
+
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.anim {
+  animation: animateIt 1s ease infinite;
+}
+
+@keyframes animateIt {
+  0% {
+    transform: translateY(4px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+  100% {
+    transform: translateY(4px);
+  }
+}
+
+@media (min-width: 400px) and (max-width: 430px) {
+  .mt-t {
+    margin-top: 8.5rem !important;
+  }
+}
+
+/* onde o tailwind css não pega */
+
+@media (min-width: 1024px) and (max-width: 1199px) {
+  .mt-t {
+    margin-top: -1rem !important;
+  }
+
+  #prices .card p {
+    font-size: 12px;
+  }
+  #prices .card .h2 {
+    font-size: 38px;
+  }
+  .resp-h1 {
+    font-size: 55px;
+    margin-top: -3rem;
+  }
+  .resp-founder {
+    margin-top: 68rem;
+  }
+
+  .resp-founder p {
+    font-size: 14px;
+  }
+
+  .resp-founder h1 {
+    font-size: 35px;
+  }
+}
+
+@media (min-width: 430px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 45px;
+  }
+
+  .clip {
+    clip-path: polygon(
+      100% 0,
+      100% 20%,
+      99% 100%,
+      80% 100%,
+      52% 100%,
+      0 62%,
+      0 0
+    );
+    overflow: auto !important;
+    overflow: visible !important; /* Altera o overflow para visible */
+  }
+}
+
+::selection {
+  background-color: #033e85;
+  color: white;
+}
+
+.z-500 {
+  z-index: 19999999999999999999999999 !important;
+}
+.z-20 {
+  z-index: 99999 !important;
+}
+.zz-10 {
+  z-index: -9 !important;
+}
+
+button {
+  box-shadow: none !important ;
+}
+
+::-webkit-scrollbar {
+  width: 15px; /* Largura da barra de rolagem */
+}
+
+::-webkit-scrollbar-track {
+  background: #fff; /* Cor de fundo da faixa da barra de rolagem */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888; /* Cor do thumb */
+  border-radius: 100px !important; /* Borda do thumb */
+}
+
+/* Para navegadores Firefox */
+/* Este é um exemplo básico, o Firefox tem menos flexibilidade de estilização */
+/* Note que pode haver variações dependendo da versão do Firefox */
+/* Você pode precisar usar vendor prefixes específicos do Firefox para versões mais antigas */
+* {
+  scrollbar-width: thin; /* Largura da barra de rolagem */
+  scrollbar-color: #033e85 #fff; /* Cor da barra de rolagem e do thumb */
+}
+
+.mobile-menu {
+  color: beige;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px 15px;
+}
+
+nav .logo-container {
+  overflow-y: hidden;
+}
+
+nav .logo-container h1 {
+  text-transform: uppercase;
+  font-size: 15px;
+}
+
+nav .menu-container {
+  overflow-y: hidden;
+}
+
+nav .menu-container div {
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+nav .menu-container div:hover {
+  cursor: pointer;
+}
+
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobile-menu button {
+  align-self: flex-end;
+  margin: 35px 45px 0 0;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-family: inherit;
+  font-size: 13px;
+  color: white;
+}
+
+.mobile-menu button:hover {
+  cursor: pointer;
+}
+
+.mobile-menu ul {
+  list-style: none;
+  margin-top: 40px;
+}
+
+.mobile-menu ul li {
+  margin: 20px 0;
+  overflow-y: hidden;
+  user-select: none;
+}
+
+.mobile-menu ul li div {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 30px;
+}
+
+.mobile-menu ul li:hover {
+  cursor: pointer;
+}
+
+.mobile-menu .contact {
+  margin-top: 80px;
+  display: flex;
+}
+
+.mobile-menu .contact h5:first-of-type {
+  margin-right: 40px;
+}
+
+.bbody {
+  font-family: Arial, sans-serif;
+  background-color: #d3d3d3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.error-container {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bbody h1 {
+  font-size: 5rem;
+  color: #033e85;
+}
+
+.bbody p {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.bbody a {
+  text-decoration: none;
+  background-color: #033e85;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 3px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.bbody a:hover {
+  background-color: #033e85;
+}
+
+.tox-statusbar {
+  display: none !important;
+}

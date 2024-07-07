@@ -1,3 +1,5 @@
+'use client'
+
 import { useEffect, useState } from 'react';
 import { NavBar } from "../components";
 import { db, storage } from "../../data/firebase";

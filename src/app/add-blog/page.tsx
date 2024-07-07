@@ -1,3 +1,5 @@
+
+'use client'
 import React, { useState } from "react";
 import { TextEditor } from "../components/text-editor/text-editor";
 import { db, storage } from "../../data/firebase";
@@ -10,7 +12,7 @@ import { FaSpinner } from "react-icons/fa6";
 export const EDIT_LINK = '/33c06d2a-cb1d-4100-8dee-ba46d075f9a2'
 
 
-export function AddBlog() {
+export default function AddBlog() {
     const [title, setTitle] = useState<string>('');
     const [subtitle, setSubtitle] = useState<string>('');
     const [editorContent, setEditorContent] = useState<string>('');

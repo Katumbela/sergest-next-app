@@ -4,8 +4,8 @@ import { useEffect, useState } from 'react';
 import { NavBar } from "../components";
 import { db, storage } from "../../data/firebase";
 import firebase from "firebase/compat/app";
-import { FaSpinner } from 'react-icons/fa6';
-import { Head } from 'next/document';
+import { FaSpinner } from 'react-icons/fa6'; 
+import Head from 'next/head';
 
 interface Post {
     id: string;

@@ -18,7 +18,7 @@ import {
 } from "../components";
 import { Layout, LayoutBody } from "../layout/layout";
 
-export default function Home() {
+export default function Homep() {
 
   return (
     <>

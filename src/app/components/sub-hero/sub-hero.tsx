@@ -1,3 +1,4 @@
+'use-client'
 import { FaPlay } from "react-icons/fa6";
 import { screens } from "../../../utils";
 import { handleClick, startUse } from "../../../utils/functions";

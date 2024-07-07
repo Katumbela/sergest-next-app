@@ -18,12 +18,12 @@ import {
 } from "../components";
 import { Layout, LayoutBody } from "../layout/layout";
 
-export function Home() {
+export default function Home() {
 
   return (
     <>
-      
-      <Layout>
+     
+     <Layout>
         <div className="container">
           <NavBar />
 
@@ -63,6 +63,7 @@ export function Home() {
         </div>
         <Footer />
       </Layout>
+
     </>
   );
 }

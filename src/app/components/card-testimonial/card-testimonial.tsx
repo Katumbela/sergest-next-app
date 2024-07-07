@@ -1,3 +1,4 @@
+'use client'
 import { FaStar } from "react-icons/fa6";
 import { Overlay } from "../overlay/overlay";
 import { ReactPropTypes } from "react";

@@ -22,14 +22,15 @@ export function Testimonials() {
         </h1>
 
         <p className="2xl:w-3/12 relative whitespace-break-spaces md:w-5/12 text-primary mt-[1rem] sm:text-xl mx-auto">
-          <ColoredText className="text-8xl comma font-bold -mt-3   absolute ms-[-2rem]">
-            <span>"</span>
+          <ColoredText className="text-8xl comma font-bold -mt-3 absolute ms-[-2rem]">
+            <span>&quot;</span>
           </ColoredText>{" "}
-          <span className="text-xl">Experiêcias que inspiram sucesso</span>
-          <ColoredText className="text-8xl comma font-bold -mt-3   absolute me-[-2rem]">
-            <span>"</span>
+          <span className="text-xl">Experiências que inspiram sucesso</span>
+          <ColoredText className="text-8xl comma font-bold -mt-3 absolute me-[-2rem]">
+            <span>&quot;</span>
           </ColoredText>{" "}
         </p>
+
       </div>
       <br />
       <br />

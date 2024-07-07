@@ -18,7 +18,7 @@ import {
 } from "../components";
 import { Layout, LayoutBody } from "../layout/layout";
 
-export function HomePage() {
+export function Home() {
 
   return (
     <>

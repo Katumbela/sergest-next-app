@@ -4,12 +4,9 @@ import React, { useState } from "react";
 import { TextEditor } from "../components/text-editor/text-editor";
 import { db, storage } from "../../data/firebase";
 import firebase from "firebase/compat/app";
-import { NavBar } from "../components"; 
+import { NavBar } from "../components";
 import { FaSpinner } from "react-icons/fa6";
-
-
-
-export const EDIT_LINK = '/33c06d2a-cb1d-4100-8dee-ba46d075f9a2'
+import Head from "next/head";
 
 
 export default function AddBlog() {
@@ -20,7 +17,10 @@ export default function AddBlog() {
     const [load, setLoad] = useState(false)
 
 
-    document.title = ' Admin Panel Blog | Sergest - Software de Faturação'
+
+    const EDIT_LINK = '/33c06d2a-cb1d-4100-8dee-ba46d075f9a2'
+
+
 
 
     const handleImageChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -61,6 +61,9 @@ export default function AddBlog() {
     return (
         <div className="container">
 
+            <Head>
+                <title>Admin Panel Blog | Sergest - Software de Faturação</title>
+            </Head>
             <NavBar />
             <br />
             <br />

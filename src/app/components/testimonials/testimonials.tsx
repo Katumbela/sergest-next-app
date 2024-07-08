@@ -47,7 +47,7 @@ export function Testimonials() {
               <Cardtestimonial
                 desc={test.desc}
                 nome={test.nome}
-                pic={test.pic}
+                pic={test.pic.src}
                 role={test.role}
               />
             </motion.div>

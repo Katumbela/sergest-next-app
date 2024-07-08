@@ -5,7 +5,6 @@ import { useEffect, useState } from 'react';
 import { FaArrowRight, FaEye, FaSpinner } from 'react-icons/fa6';
 import { useParams } from 'react-router-dom';
 import Image from 'next/image';
-import Head from 'next/head';
 import { db } from '@/data/firebase';
 import { ColoredText, Footer, NavBar } from '@/app/components';
 import { logos } from '@/utils';

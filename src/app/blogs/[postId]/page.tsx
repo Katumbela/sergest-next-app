@@ -70,8 +70,9 @@ export default function Blogs() {
         <>
             <Head>
                 <title>{post ? post.title : 'Carregando...'} | Sergest - Software de Faturação</title>
-                <meta property="description" content={post ? post.subtitle : 'Carregando...'} />
-                <meta property="image" content={post ? post.imageUrl : ''} />
+                <meta property="og:title" content="Title Here" />
+                <meta property="og:description" content={post ? post.subtitle : 'Carregando...'} />
+                <meta property="og:image" content={post ? post.imageUrl : ''} />
                 <meta property="url" content={typeof window !== 'undefined' ? window.location.href : ''} />
                 <link rel="icon" href={post ? post.imageUrl : ''} />
             </Head>

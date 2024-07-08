@@ -43,7 +43,7 @@ export function TestimonialCarousel() {
                 role={test.role}
                 desc={test.desc}
                 nome={test.nome}
-                pic={test.pic}
+                pic={test.pic.src}
               />
             </motion.div>
           ))}

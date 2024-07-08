@@ -75,7 +75,7 @@ export default function Blogs({ params }: PostParams) {
         fetchPosts();
     }, []);
 
-    document.title = post ? post.title + ' | Sergest Software' : 'Sergest Software '
+    document.title = post ? post.title + ' | Sergest Software' : 'Blogs | Sergest Software '
 
     return (
         <>

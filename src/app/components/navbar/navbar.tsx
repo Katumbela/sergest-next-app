@@ -7,6 +7,7 @@ import { LoginNow } from "../../../utils/functions";
 import { useState } from "react";
 import NumberUtils from "../../../utils/number-utils/number-utils";
 import Image from "next/image";
+import Link from "next/link";
 
 const MOBILE_NAV_ITEMS = [
   {
@@ -207,8 +208,7 @@ export function NavBar() {
                   onClick={() => setMobileNavOpen(false)}
                   variants={liVariant}
                 >
-                  {" "}
-                  <a href={navItem.link}>{navItem.navTitle}</a>
+                  <Link href={navItem.link}>{navItem.navTitle}</Link>
                 </motion.div>
               </motion.li>
             ))}

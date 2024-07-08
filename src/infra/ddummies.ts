@@ -1,10 +1,11 @@
 
+import { StaticImageData } from "next/image";
 import { users } from "../utils";
 
 interface TDProps {
   id: number; 
   nome: string;
-  pic: string;
+  pic: StaticImageData;
   desc: string;
   role: string;
 }

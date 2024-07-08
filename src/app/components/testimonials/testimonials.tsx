@@ -1,4 +1,4 @@
-'use client'
+"use client"
 import { testimonials_dummy } from "../../../infra/ddummies";
 import { Cardtestimonial } from "../card-testimonial/card-testimonial";
 import { circles } from "../../../utils";

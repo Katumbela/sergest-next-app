@@ -1,4 +1,4 @@
-'use-client'
+"use client"
 import { FaPlay } from "react-icons/fa6";
 import { bgs } from "../../../utils";
 import { ButtonSecondary } from "../button-secondary/button-secondary";
@@ -6,7 +6,6 @@ import { ColoredText } from "../colored-text/colored-text";
 import { Overlay } from "../overlay/overlay";
 import { startUse } from "../../../utils/functions";
 import Image from "next/image";
-//import { useState, useEffect } from "react";
 
 export function Hero() {
   const handleClick = () => {
@@ -16,21 +15,6 @@ export function Hero() {
     );
   };
 
-  /*
-  const [width, setWidth] = useState(window.innerWidth);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setWidth(window.innerWidth);
-    };
-
-    window.addEventListener("resize", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-*/
   return (
     <div className="flex flex-col md:flex-row mt-[3rem] -z-10 sm:-mt-8 lg:mt-20 2xl:mt-[3rem] h-[400px]">
       <div className="grid lg:w-6/12 md:w-8/12 text-start">
@@ -51,10 +35,12 @@ export function Hero() {
             <span className="font-bold"> 15 dias</span>.
           </p>
           <div className="flex justify-center md:justify-start mt-[1.5rem] gap-3 md:mt-[.8rem] lg:mt-[1rem]">
-            <ButtonSecondary className="md:text-xs lg:text-normal md:mb-6 lg:mb-auto " click={startUse}>Começar a usar</ButtonSecondary>
+            <ButtonSecondary className="md:text-xs lg:text-normal md:mb-6 lg:mb-auto" click={startUse}>
+              Começar a usar
+            </ButtonSecondary>
             <button
-              onClick={handleClick}
-              className="flex gap-2 px-4 py-2 text-sm font-bold text-red-500 border-2 border-red-500 rounded-md sm:text-md sm:py-[.65rem] md:text-xs lg:text-medium md:mb-6 lg:mb-auto "
+              onClick={()=>handleClick()} // Aqui está o evento de clique
+              className="flex gap-2 px-4 py-2 text-sm font-bold text-red-500 border-2 border-red-500 rounded-md sm:text-md sm:py-[.65rem] md:text-xs lg:text-medium md:mb-6 lg:mb-auto"
             >
               <span className="my-auto">Como usar</span>{" "}
               <FaPlay className="my-auto" />
@@ -62,8 +48,6 @@ export function Hero() {
           </div>
         </div>
       </div>
-
-
       <div className="relative grid lg:w-6/12 md:w-6/12 -z-10">
         <Overlay />
         <Image

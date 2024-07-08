@@ -1,3 +1,4 @@
+"use client"
 // src/app/layout/_layout.tsx
 import { ReactNode } from "react";
 import { motion } from "framer-motion";

@@ -1,4 +1,7 @@
+"use client"
 import { motion } from "framer-motion";
+
+
 import { bgs } from "../../../utils";
 import { Overlay } from "../overlay/overlay";
 

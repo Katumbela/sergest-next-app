@@ -1,3 +1,5 @@
+"use client"
+
 import { FaArrowRight } from "react-icons/fa6";
 import { plans_dummies } from "../../../infra/plans_dummies";
 import { ColoredText } from "../colored-text/colored-text";

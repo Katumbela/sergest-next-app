@@ -1,3 +1,5 @@
+"use client"
+
 import { motion } from "framer-motion";
 import { circles, screens } from "../../../utils";
 import { ColoredText } from "../colored-text/colored-text";

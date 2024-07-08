@@ -1,3 +1,5 @@
+"use client"
+
 import { motion } from "framer-motion";
 import { bgs, circles } from "../../../utils";
 import { Button } from "../button/button";

@@ -1,9 +1,10 @@
+import { StaticImageData } from "next/image";
 import { logos } from "../utils";
 
 interface PProps {
   id: number; // Adicionando a propriedade id
   plan: string;
-  logo: string;
+  logo: StaticImageData;
   desc: string;
   benefits: string;
   btn: string;

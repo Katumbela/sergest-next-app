@@ -34,7 +34,7 @@ export function Prices() {
             >
               <div className="relative flex gap-6">
                 <Overlay />
-                <Image src={plan.logo} className="w-[4em]" alt="" />
+                <Image src={plan.logo.src} className="w-[4em]" alt="" />
                 <h1 className={`sm:text-3xl text-2xl  my-auto font-bold`}>
                   {plan.plan}
                 </h1>

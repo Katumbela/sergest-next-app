@@ -67,15 +67,15 @@ export default function Blogs() {
     }, []);
 
     return (
-        <>
-            <Head>
+        <html>
+            <head>
                 <title>{post ? post.title : 'Carregando...'} | Sergest - Software de Faturação</title>
                 <meta property="og:title" content="Title Here" />
                 <meta property="og:description" content={post ? post.subtitle : 'Carregando...'} />
                 <meta property="og:image" content={post ? post.imageUrl : ''} />
                 <meta property="url" content={typeof window !== 'undefined' ? window.location.href : ''} />
                 <link rel="icon" href={post ? post.imageUrl : ''} />
-            </Head>
+            </head>
 
             <div className="container">
                 <NavBar />
@@ -154,6 +154,6 @@ export default function Blogs() {
                 )}
             </div>
             <Footer />
-        </>
+        </html>
     );
 }

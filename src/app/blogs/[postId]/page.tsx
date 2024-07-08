@@ -81,7 +81,7 @@ export default function Blogs({ params }: PostParams) {
                 <title>{post ? post.title : 'Carregando...'} | Sergest - Software de Faturação</title>
                 <meta property="og:description" content={post ? post.subtitle : 'Carregando...'} />
                 <meta property="og:image" content={post ? post.imageUrl : ''} />
-              </head>
+            </head>
 
             <body>
                 <div className="container">

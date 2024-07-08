@@ -16,7 +16,7 @@ import {
   SystemComponent,
   Testimonials,
 } from "../components";
-import { Layout, LayoutBody } from "../padrao/layout";
+import { Layout, LayoutBody } from "../padrao/padrao";
 
 export default function Homep() {
 

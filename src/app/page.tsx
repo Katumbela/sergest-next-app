@@ -1,6 +1,6 @@
 import Image from "next/image"; 
 import Layout from "./layout";
-import { LayoutBody } from "./padrao/layout"; 
+import { LayoutBody } from "./padrao/padrao"; 
 import Head from "next/head";
 import { Hero } from "./components/hero/hero";
 import { Testimonials } from "./components/testimonials/testimonials";

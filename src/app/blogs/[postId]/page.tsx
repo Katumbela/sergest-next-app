@@ -3,14 +3,13 @@
 
 import { useEffect, useState } from 'react';
 import { FaArrowRight, FaEye, FaSpinner } from 'react-icons/fa6';
-import { useParams } from 'react-router-dom';
 import Image from 'next/image';
 import { db } from '@/data/firebase';
 import { ColoredText, Footer, NavBar } from '@/app/components';
 import { logos } from '@/utils';
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/firestore';
-import Head from 'next/head';
+import { NextSeo } from 'next-seo';
 
 interface Post {
     id: string;
@@ -78,12 +77,17 @@ export default function Blogs({ params }: PostParams) {
 
     return (
         <>
-              <Head>
+            <head>
                 {/* Definindo o título da página de forma dinâmica */}
-                <title>{post?.title ? `${post.title} | Sergest - Software de Faturação` : 'Sergest - Software de Faturação'}</title>
-                <meta property="og:description" content={post ? post.subtitle : 'Carregando...'} />
+                <title> Artigos SoftSergest | Software</title>
+                <meta property="og:description" content='Ao longo dos anos, a sergest transformou a gestão de mais de 1.849 negócios em Angola.' />
                 <meta property="og:image" content={post ? post.imageUrl : ''} />
-            </Head>
+            </head>
+            <NextSeo
+
+                title={post ? post.imageUrl : 'Sergest Software '}
+                description={post ? post.subtitle : 'O melhor software de faturação'}
+            />
 
 
             <body>

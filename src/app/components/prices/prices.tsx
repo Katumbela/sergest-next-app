@@ -28,13 +28,15 @@ export function Prices() {
             <div
               key={plan.id}
               className={`card ${plan.id == 2
-                  ? "gradient-sergest shadow-2xl lg:shadow-primary text-white"
-                  : "hover:bg-primary/5"
+                ? "gradient-sergest shadow-2xl lg:shadow-primary text-white"
+                : "hover:bg-primary/5"
                 }  transition-all hover:-translate-y-2 border rounded-xl shadow-xl py-8 px-6`}
             >
               <div className="relative flex gap-6">
                 <Overlay />
-                <Image src={plan.logo.src} className="w-[4em]" alt="" />
+                <Image
+                  width={100}
+                  height={100} src={plan.logo.src} className="w-[4em]" alt="" />
                 <h1 className={`sm:text-3xl text-2xl  my-auto font-bold`}>
                   {plan.plan}
                 </h1>

@@ -21,19 +21,29 @@ interface Post {
     createdAt: firebase.firestore.Timestamp;
 }
 
-export default function Blogs() {
-    const { postId } = useParams<{ postId: string }>();
+
+interface PostParams {
+    params: {
+        postId: string;
+
+    }
+    ;
+
+}
+
+
+export default function Blogs({ params }: PostParams) { 
     const [post, setPost] = useState<Post | null>(null);
     const [load, setLoad] = useState(true);
     const [posts, setPosts] = useState<Post[]>([]);
 
     useEffect(() => {
         const fetchPost = async () => {
-            const postDoc = await db.collection('posts').doc(postId).get();
+            const postDoc = await db.collection('posts').doc(params.postId).get();
             if (postDoc.exists) {
                 const postData = postDoc.data() as Omit<Post, 'id'>;
                 // Incrementar a contagem de visualizações
-                await db.collection('posts').doc(postId).update({
+                await db.collection('posts').doc(params.postId).update({
                     views: (postData.views || 0) + 1,
                 });
                 setPost({ id: postDoc.id, ...postData });
@@ -42,7 +52,7 @@ export default function Blogs() {
         };
 
         fetchPost();
-    }, [postId]);
+    }, [params.postId]);
 
     const calculateReadingTime = (text: string) => {
         const wordsPerMinute = 200;

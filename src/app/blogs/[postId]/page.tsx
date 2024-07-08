@@ -76,7 +76,8 @@ export default function Blogs() {
                 <link rel="icon" href={post ? post.imageUrl : ''} />
             </head>
 
-            <div className="container">
+           <body>
+           <div className="container">
                 <NavBar />
                 <br />
                 {load && (
@@ -153,6 +154,7 @@ export default function Blogs() {
                 )}
             </div>
             <Footer />
+           </body>
         </html>
     );
 }

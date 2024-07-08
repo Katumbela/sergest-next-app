@@ -10,6 +10,7 @@ import { ColoredText, Footer, NavBar } from '@/app/components';
 import { logos } from '@/utils';
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/firestore';
+import Head from 'next/head';
 
 interface Post {
     id: string;
@@ -77,11 +78,13 @@ export default function Blogs({ params }: PostParams) {
 
     return (
         <>
-            <head>
-                <title>{post?.title} | Sergest - Software de Faturação</title>
+              <Head>
+                {/* Definindo o título da página de forma dinâmica */}
+                <title>{post?.title ? `${post.title} | Sergest - Software de Faturação` : 'Sergest - Software de Faturação'}</title>
                 <meta property="og:description" content={post ? post.subtitle : 'Carregando...'} />
                 <meta property="og:image" content={post ? post.imageUrl : ''} />
-            </head>
+            </Head>
+
 
             <body>
                 <div className="container">

@@ -75,17 +75,18 @@ export default function Blogs({ params }: PostParams) {
         fetchPosts();
     }, []);
 
+    document.title = post ? post.title + ' | Sergest Software' : 'Sergest Software '
+
     return (
         <>
             <head>
                 {/* Definindo o título da página de forma dinâmica */}
-                <title> Artigos SoftSergest | Software</title>
-                <meta property="og:description" content='Ao longo dos anos, a sergest transformou a gestão de mais de 1.849 negócios em Angola.' />
+               <meta property="og:description" content='Ao longo dos anos, a sergest transformou a gestão de mais de 1.849 negócios em Angola.' />
                 <meta property="og:image" content={post ? post.imageUrl : ''} />
             </head>
             <NextSeo
 
-                title={post ? post.imageUrl : 'Sergest Software '}
+                title={post ? post.title : 'Sergest Software '}
                 description={post ? post.subtitle : 'O melhor software de faturação'}
             />
 

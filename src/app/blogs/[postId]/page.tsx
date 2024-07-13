@@ -10,6 +10,7 @@ import { logos } from '@/utils';
 import firebase from 'firebase/compat/app';
 import 'firebase/compat/firestore';
 import { NextSeo } from 'next-seo';
+import Head from 'next/head';
 
 interface Post {
     id: string;
@@ -75,15 +76,32 @@ export default function Blogs({ params }: PostParams) {
         fetchPosts();
     }, []);
 
-    document.title = post ? post.title + ' | Sergest Software' : 'Blogs | Sergest Software '
+    // document.title = post ? post.title + ' | Sergest Software' : 'Blogs | Sergest Software '
 
     return (
         <>
-            <head>
-                {/* Definindo o título da página de forma dinâmica */}
-               <meta property="og:description" content='Ao longo dos anos, a sergest transformou a gestão de mais de 1.849 negócios em Angola.' />
-                <meta property="og:image" content={post ? post.imageUrl : ''} />
-            </head>
+            <Head>
+                {/* Meta tags para SEO */}
+                <title>{post ? post.title + ' | Sergest Software' : 'Blogs | Sergest Software'}</title>
+                <meta name="description" content={post ? post.subtitle : 'O melhor software de faturação'} />
+
+                {/* Meta tags para compartilhamento social */}
+                <meta property="og:title" content={post ? post.title : 'Sergest Software'} />
+                <meta property="og:description" content={post ? post.subtitle : 'O melhor software de faturação'} />
+                <meta property="og:image" content={post ? post.imageUrl : '/default-image.jpg'} />
+                <meta property="og:image:width" content="1200" />
+                <meta property="og:image:height" content="630" />
+                <meta property="og:type" content="article" />
+                <meta property="og:url" content={`https://example.com/blogs/${params.postId}`} />
+
+                {/* Meta tags para Twitter */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content={post ? post.title : 'Sergest Software'} />
+                <meta name="twitter:description" content={post ? post.subtitle : 'O melhor software de faturação'} />
+                <meta name="twitter:image" content={post ? post.imageUrl : '/default-image.jpg'} />
+            </Head> 
+
+            
             <NextSeo
 
                 title={post ? post.title : 'Sergest Software '}
